@@ -132,7 +132,7 @@ app.get("/text/sentiment", (req,res) => {
         return res.send(analyzeResults.result.keywords[0].sentiment, null, 2);
     })
     .catch(err => {
-        return res.send("Could not do desried operation " + err);
+        return res.send("Could not do desired operation " + err);
     });
 });
 
